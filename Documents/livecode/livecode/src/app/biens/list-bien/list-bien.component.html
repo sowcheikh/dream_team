@@ -1,0 +1,9 @@
+<!-- <div class="form-group">
+       <input class="form-control mr-sm-2" type="search" placeholder="Search"
+       [(ngModel)]= "search" aria-label="Search">
+     </div>
+<hr>-->
+ 
+ <div class="row">
+        <app-item-bien class="col-sm-4" [bien]="b" *ngFor="let b of biens | filterSearch:searchB:'title'"></app-item-bien>
+ </div>

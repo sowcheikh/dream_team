@@ -1,0 +1,12 @@
+<!-- <button class="btn btn-danger" (click)="onClickBtn()"> {{message}} </button>
+<input type="text" [(ngModel)]="name" [disabled] ="!ok" placeholder="enregistrer">
+<h1>Hello {{name}} </h1> -->
+<app-header (searchcriteria)="searchThis($event)"></app-header>
+<app-jumbotron></app-jumbotron>
+
+<div class="container">
+  <router-outlet></router-outlet>
+  <!--<app-list-bien [searchB]="searchcriteria"></app-list-bien>-->
+</div>
+
+<app-footer></app-footer>
